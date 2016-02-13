@@ -28,7 +28,7 @@ public:
 
     /**
      * @brief Permet de définir la vitesse du UFO
-     * @param La nouvelle vitesse du MovableObject
+     * @param La nouvelle vitesse du UFO
      */
     void setSpeed(int speed);
 

@@ -1,12 +1,10 @@
 #ifndef SPACESHIP_H
 #define SPACESHIP_H
-#include "movableobject.h"
-
-#include "shipbullet.h"
+#include "ufo.h"
 /**
  * @brief La classe SpaceShip gère le vaisseau
  */
-class SpaceShip : public MovableObject
+class SpaceShip : public UFO
 {
 public:
     /**
@@ -54,13 +52,13 @@ public:
     /**
      * @brief Reinitialise la durée du GodMode
      */
-    void resetGodMode();
+    void resetInvincible();
 private:
     QPoint getAbsolutePoint(QPoint relativePoint) const;
     int _orientation;
     int _acceleration;
     int _maxspeed;
-    int _godModeDuration;
+    int _invicibleDuration;
 };
 
 #endif // SPACESHIP_H
