@@ -14,9 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    game.cpp
+    game.cpp \
+    minestorm.cpp
 
 HEADERS  += mainwindow.h \
-    game.h
+    game.h \
+    minestorm.h
 
 FORMS    += mainwindow.ui
